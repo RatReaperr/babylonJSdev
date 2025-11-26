@@ -59,7 +59,6 @@ function createGround(scene: Scene) {
   return ground;
 }
 
-// skybox based on a series on different faces which makes up a cube texture
 function createSky(scene: Scene) {
   const skybox = MeshBuilder.CreateBox("skyBox", { size: 150 }, scene);
   const skyboxMaterial = new StandardMaterial("skyBox", scene);
@@ -125,6 +124,7 @@ function createRoof(style: number) {
   roof.material = roofMat;
   return roof;
 }
+
 function createHouse(scene: Scene, style: number) {
   const box = createBox(style);
   const roof = createRoof(style);
@@ -139,6 +139,7 @@ function createHouse(scene: Scene, style: number) {
   // last true allows combined mesh to use multiple materials
   return house;
 }
+
 function createHouses(scene: Scene, style: number) {
   //Start by locating one each of the two house types then add others
 
@@ -197,6 +198,7 @@ function createHouses(scene: Scene, style: number) {
   }
   // nothing returned by this function
 }
+
 function createTrees(scene: Scene) {
   const spriteManagerTrees = new SpriteManager(
     "treesManager",
@@ -222,7 +224,6 @@ function createTrees(scene: Scene) {
   }
   // nothing returned by this function
 }
-
 function createHemisphericLight(scene: Scene) {
   const light = new HemisphericLight(
     "light",
@@ -235,6 +236,7 @@ function createHemisphericLight(scene: Scene) {
   light.groundColor = new Color3(0, 0.2, 0.7);
   return light;
 }
+
 
 function createArcRotateCamera(scene: Scene) {
   let camAlpha = -Math.PI / 2,
@@ -259,7 +261,6 @@ function createArcRotateCamera(scene: Scene) {
   camera.attachControl(true);
   return camera;
 }
-//brings all the scene data together
 
 export default function createStartScene(engine: Engine) {
   let scene   = new Scene(engine);
