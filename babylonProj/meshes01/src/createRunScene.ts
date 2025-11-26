@@ -19,3 +19,4 @@ export default function createRunScene(runScene: SceneData) {
     boxAngle %= 1;
   })
 }
+
