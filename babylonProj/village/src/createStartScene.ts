@@ -224,6 +224,7 @@ function createTrees(scene: Scene) {
   }
   // nothing returned by this function
 }
+
 function createHemisphericLight(scene: Scene) {
   const light = new HemisphericLight(
     "light",
@@ -236,7 +237,6 @@ function createHemisphericLight(scene: Scene) {
   light.groundColor = new Color3(0, 0.2, 0.7);
   return light;
 }
-
 
 function createArcRotateCamera(scene: Scene) {
   let camAlpha = -Math.PI / 2,

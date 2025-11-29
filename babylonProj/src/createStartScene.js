@@ -26,10 +26,10 @@ function createArcRotateCamera(scene) {
 }
 export default function createStartScene(engine) {
     let that = { scene: new Scene(engine) };
-    createBox(that.scene);
-    createLight(that.scene);
-    createSphere(that.scene);
-    createGround(that.scene);
-    createArcRotateCamera(that.scene);
+    that.box = createBox(that.scene);
+    that.light = createLight(that.scene);
+    that.sphere = createSphere(that.scene);
+    that.ground = createGround(that.scene);
+    that.camera = createArcRotateCamera(that.scene);
     return that;
 }
