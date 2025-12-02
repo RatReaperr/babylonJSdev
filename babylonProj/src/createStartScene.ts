@@ -75,10 +75,10 @@ import {
     let that: SceneData = { scene: new Scene(engine) };
     //that.scene.debugLayer.show();
   
-    createBox(that.scene);
-    createLight(that.scene);
-    createSphere(that.scene);
-    createGround(that.scene);
-    createArcRotateCamera(that.scene);
+    that.box = createBox(that.scene);
+    that.light = createLight(that.scene);
+    that.sphere = createSphere(that.scene);
+    that.ground = createGround(that.scene);
+    that.camera = createArcRotateCamera(that.scene);
     return that;
   }

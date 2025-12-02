@@ -17,6 +17,5 @@ export default function createRunScene(runScene: SceneData) {
     runScene.box!.rotationQuaternion = quat;
     boxAngle += boxSpeed;
     boxAngle %= 1;
-  })
+    })
 }
-

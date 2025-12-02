@@ -1,7 +1,7 @@
 import { Engine } from "@babylonjs/core";
 import createStartScene from "./createStartScene";
-import './main.css';
 import createRunScene from "./createRunScene";
+import './main.css';
 
 const CanvasName = "renderCanvas";
 
@@ -16,5 +16,5 @@ let startScene = createStartScene(eng);
 createRunScene(startScene);
 
 eng.runRenderLoop(() => {
-    startScene.scene.render();
-});                  
+  startScene.scene.render();
+});            
