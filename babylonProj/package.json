@@ -11,6 +11,7 @@
     "motion01preview": "vite preview motion01 --host"
   },
   "devDependencies": {
+    "@babylonjs/core": "^8.39.2",
     "typescript": "~5.9.3",
     "vite": "^7.1.7"
   }
