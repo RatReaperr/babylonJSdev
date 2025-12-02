@@ -2,7 +2,7 @@ import { Vector3, Quaternion } from "@babylonjs/core";
 
 import { SceneData } from "./interfaces";
 
-// rotate box
+ // rotate box
 let boxAngle: number = 0.3;
 let boxSpeed: number = 0.01;
 
@@ -17,5 +17,5 @@ export default function createRunScene(runScene: SceneData) {
     //runScene.box!.rotationQuaternion = quat;
     boxAngle += boxSpeed;
     boxAngle %= 1;
-    })
-}
+    }) 
+  }
