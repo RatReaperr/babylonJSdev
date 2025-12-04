@@ -7,8 +7,9 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview --host",
-    "motion01build": "tsc && vite build motion01",
-    "motion01preview": "vite preview motion01 --host"
+    "meshes01build": "tsc && vite build meshes01",
+    "mmeshes01preview": "vite preview meshes01 --host"
+    
   },
   "devDependencies": {
     "@babylonjs/core": "^8.39.2",
