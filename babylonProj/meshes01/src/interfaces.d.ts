@@ -1,35 +1,33 @@
 import {
-    Scene,
-    ArcRotateCamera,
-    Vector3,
-    HemisphericLight,
-    PointLight,
-    SpotLight,
-    DirectionalLight,
-    MeshBuilder,
-    Mesh,
-    Light,
-    Camera,
-    Engine,
-    StandardMaterial,
-    Color3,
-    ShadowGenerator,
-    Texture,
-  } from "@babylonjs/core";
+  Scene,
+  Mesh,
+  HemisphericLight,
+  Camera,
+  PointLight,
+  DirectionalLight,
+  SpotLight,
+  ShadowGenerator,
+} from "@babylonjs/core";
 
 export interface SceneData {
-      scene: Scene;
-      box?: Mesh;
-      light?: Light;
-      spot?: SpotLight;
-      hemi?: HemisphericLight;
-      dlight?: DirectionalLight;
-      point?: PointLight;
-      sphere?: Mesh;
-      cone?: Mesh;
-      cylinder?: Mesh;
-      triangle?: Mesh;
-      capsule?: Mesh;
-      ground?: Mesh;
-      camera?: Camera;
-    }
+  scene: Scene,
+  ground: Mesh,
+  sphere: Mesh,
+  box: Mesh,
+  cylinder: Mesh,
+  cone: Mesh,
+  triangle: Mesh,
+  capsule: Mesh,
+  torus: Mesh,
+  plane: Mesh,
+  tube: Mesh,
+  extrusion: Mesh,
+  octahedron: Mesh,
+  plane2: Mesh,
+  lightHemispheric: HemisphericLight,
+  lightPoint: PointLight;
+  lightDirectional: DirectionalLight;
+  lightSpot: SpotLight;
+  camera: Camera;
+ 
+}
