@@ -7,8 +7,8 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview --host",
-    "meshes01build": "tsc && vite build meshes01",
-    "meshes01preview": "vite preview meshes01 --host"
+    "player04build": "tsc && vite build player04",
+    "player04preview": "vite preview player04 --host"
   },
   "devDependencies": {
     "@babylonjs/core": "^8.40.1",
