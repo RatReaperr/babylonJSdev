@@ -20,7 +20,7 @@ export default function createRunScene(runScene: SceneData) {
   keyActionManager(runScene.scene);
 
   const environmentTexture = new CubeTexture(
-    "public/assets/textures/industrialSky.env",
+    "assets/textures/industrialSky.env",
     runScene.scene
   );
   const skybox = runScene.scene.createDefaultSkybox(
@@ -29,7 +29,7 @@ export default function createRunScene(runScene: SceneData) {
     10000,
     0.1
   );
-
+  
 
   // add baked in animations to player
   runScene.player.then((result) => {
@@ -40,10 +40,7 @@ export default function createRunScene(runScene: SceneData) {
   runScene.scene.onBeforeRenderObservable.add(() => {
     // check and respond to keypad presses
 
-    if (getKeyDown() == 1 && (keyDownMap["m"] || keyDownMap["M"])) {
-      keyDownHeld();
-
-    }
+   
 
     runScene.player.then((result) => {
       let characterMoving: Boolean = false;

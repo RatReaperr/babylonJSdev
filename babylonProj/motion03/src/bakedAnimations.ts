@@ -10,6 +10,9 @@ var idleRange:Nullable<AnimationRange>;
 var animScene:Scene;
 var animSkeleton:Skeleton;
 
+
+
+
 export function bakedAnimations(myscene: Scene, skeleton: Skeleton){
   
    // use baked in animations
